@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Inter:wght@700&family=Roboto:wght@100;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #89C15E;
+    font-family: 'Roboto';
+}
+
+#newDisplay{
+    margin-bottom: 100px;
+}
+
+
+#up{
+    width: 800px;
+    height: 160px;
+    margin-top: 12px;
+    margin-left: 290px;
+    border-radius: 13px;
+    border: 2px solid #FFFFFF;
+    align-items: center;
+}
+
+#up ul{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 46.88px;
+    letter-spacing: 10%;
+    color: white;
+    list-style: none;
+    margin-top: 16px;
+    margin-left: 18px;
+    gap: 5px;
+}
+
+#comscore{
+    width: 139px;
+    height: 128px;
+    margin-top: -140px;
+    margin-left: 413px;
+    padding-top: 7px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 19.92px;
+    letter-spacing: 10%;
+    color: #656565;
+    text-align: center;
+}
+
+#userscore{
+    width: 139px;
+    height: 128px;
+    margin-top: -128px;
+    margin-left: 583px;
+    padding-top: 7px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 19.92px;
+    letter-spacing: 10%;
+    color: #656565;
+    text-align: center;
+}
+
+#comscore>input, #userscore > input{
+    width: 79px;
+    height: 63px;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 79.69px;
+    color: #252525;
+    text-align: center;
+    border: none;
+    background-color: #FFFFFF;
+
+}
+
+/*  */
+
+#rockout, #scissorout {
+    /* margin-top: -500px; */
+    /* margin-left: px; */
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 100px;
+    position: absolute;
+}
+
+#rock{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 100px;
+    position: absolute;
+}
+
+#paperout{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+}
+
+#rockin, #scissorin, #paperin, #rocki {
+    width: 120px;
+    height: 120px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+}
+
+#rockout{
+    margin-top: 79px;
+    margin-left: 377px;
+    background-color: #0074B6;
+}
+
+#scissorout{
+    margin-top: 79px;
+    margin-left: 677px;
+    background-color: #BD00FF;
+}
+
+#paperout{
+    margin-left: 542px;
+    margin-top: 335px;
+    background-color: #FFA943;
+
+}
+
+#rockin > img, #scissorin > img, #paperin >img  {
+    background-color: #FFFFFF;
+}
+
+#rect{
+    position: relative;
+}
+
+#rect1{
+    height: 20px;
+    width: 300px;
+    margin-top: 150px;
+    margin-left: 480px;
+    background-color: #000000;
+    display: inline-flex;
+    transform: rotate(0deg); 
+    position: absolute;
+    z-index: -1;
+}
+
+#rect2{
+    height: 20px;
+    width: 300px;
+    margin-top: 300px;
+    margin-left: 400px;
+    background-color: #000000;
+    display: inline-flex;
+    transform: rotate(55deg); 
+    position: absolute;
+    z-index: -1;
+}
+
+#rect3{
+    height: 20px;
+    width: 300px;
+    margin-top: 300px;
+    margin-left: 550px;
+    background-color: #000000;
+    display: inline-flex;
+    transform: rotate(125deg);
+    position: absolute;
+    z-index: -1;
+}
+ /* done till here */
+
+ #resultScreen{
+    position: relative;
+ }
+ #win{
+    /* display: none; */
+    /* make is un comment after final changes */
+ }
+
+ #youPicked{
+    width: 113px;
+    margin-top: 124px;
+    margin-left: 433px;
+ }
+
+ #youPicked, #pcPicked{
+    height: 16px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 19.92px;
+    letter-spacing: 10%;
+    color: #FFFFFF;
+ }
+
+ #pcPicked{
+    width: 110px;
+    margin-left: 267px;
+    margin-top: 124px;
+ }
+
+#youWin{
+    width: 183px;
+    height: 36px;
+    margin-top: 264px;
+    margin-left: -363px;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 45.6px;
+    letter-spacing: 10%;
+    text-align: center;
+    color:#FFFFFF;
+}
+
+ #againstPC{
+    width: 168px;
+    height: 31px;
+    margin-top: 310px;
+    margin-left: -163px;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 29.3px;
+    letter-spacing: 10%;
+    align-items: center;
+    color: #FFFFFF;
+ }
+ /* rock win case */
+
+#playAgain{
+    width: 174px;
+    height: 44px;
+    margin-top: 360px;
+    margin-left: -183px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 17.58px;
+    letter-spacing: 10%;
+    border-radius: 9px;
+    color: #6B6B6B;
+    background-color: #FFFFFF;
+}
+
+#rule {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 119px;
+    height: 40px;
+    margin-left: 1375px;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;  
+    cursor: pointer;
+}
+
+#rule > p {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 24.61px;
+    letter-spacing: 10%;
+    margin-top: 8px;
+    margin-left: 25px;
+}
+
+.closable-div {
+    position:absolute;
+    right: 0;
+    bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px;
+    margin: 20px;
+    width: 303px;
+    height: 367px; 
+  }
+
+  #ruleBox{
+    background-color: #004429;
+    /* border: 8px solid white; */
+    border-radius: 13px;
+  }
+
+  .close-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    cursor: pointer;
+    background-color: #FF0000;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #FFFFFF;
+  }
+
+  .close-icon>p {
+    color:#FFFFFF;
+    height: 30px;
+    background-color: #FF0000;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dangrek';
+    font-weight: 400;
+    font-size: 44px;
+  }
+  #min{
+    width: 278px;
+    height: 355px;
+    background-color: #004429;
+    border-radius: 13px;
+    border: 7px solid #FFFFFF;
+    /* border-end-end-radius: 13px; */
+    border-radius: 13px;
+  }
+  #min > p{
+    bottom: 10px;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 33.98px;
+    color: #FFFFFF;
+    background-color: #004429;
+    text-align: center;
+    padding-top: 25px;
+  }
+
+  #min > ul{
+    padding-top: 28px;
+    padding-left: 20px  ;
+    padding-bottom: 33px;
+    gap: 18px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 15.23px;
+    color: #FFFFFF;
+    background-color: #004429;
+  }
+
+#rock, #paper, #scissor {
+    display: none;
+}
+
+#ul li::marker {
+    color: #FFD600;
+}
+
+/* js html css */
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+#rockDisplayUser{
+    position: relative;
+    margin-bottom: 80px;
+    width: 113px;
+    height: 16px;
+    /* padding-top: 344px; */
+    margin-left: 433px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 19.92px;
+    letter-spacing: 10%;
+    color: #FFFFFF;
+    /* animation: slideIn 1s ease-in-out; Apply the animation */
+}
+
+#rockDisplayComp{
+    /* position: relative;
+    margin-bottom: 80px; */
+    width: 100px;
+    height: 16px;
+    /* padding-top: 144px; */
+    margin-left: 736px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 19.92px;
+    letter-spacing: 10%;
+    color: #FFFFFF;
+}
