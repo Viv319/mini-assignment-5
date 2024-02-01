@@ -44,28 +44,46 @@
                 <div id="rect3"></div>
                 </div>
             </div>
+            <div id="common">
+                <p id="youPicked">YOU PICKED</p>
+                <p id="pcPicked">PC PICKED</p>
+                <button id="playAgain" onclick="redirectToHomePage()">PLAY AGAIN</button>
+            </div>
             <div id="resultScreen">
-                <div id="loose">
-                    
-                </div>
                 <div id="win"> 
                     <!-- MOBILE-RESULT -->
-                    <p id="youPicked">YOU PICKED</p>
-                    <p id="pcPicked">PC PICKED</p>
                     <div id="youWin">YOU WIN</div><br>
                     <p id="againstPC"> AGAINST PC </p>
-                    <button id="playAgain">PLAY AGAIN</button>
-                    <div id="winningCircle">
+                    <button id="next" onclick="hurrayPage()">NEXT</button>
+                    <!-- <div id="winningCircle">
+                        <div class="circle outer"></div>
+                        <div class="circle inner"></div>
+                        <div class="circle innermost"></div>
+                    </div> -->
+
+                </div>
+                <div id="tie">
+                    <div id="tieUP">TIE UP</div>
+                    <!-- <button id="multiTaskButton">REPLAY</button> -->
+                </div>
+                <div id="looseMessage">
+                    <p id="youlost">YOU LOST</p>
+                    <p id="againstPC">AGAINST PC</p>
+
+                    <div id="looseCircle">
                         <div class="circle outer"></div>
                         <div class="circle inner"></div>
                         <div class="circle innermost"></div>
                     </div>
-
                 </div>
                 <div id="resultBox">
                     <div id="winResult">
                         <div id="rockWin">
-                            <img src="rock.png" id="rockImg">
+                            <div id="rockout">
+                                <div id="rockin">
+                                    <img src="rock.png" .class="imgclass">
+                                </div>
+                            </div>
                         </div>
                         <div id="paperWin">
                             <img src="paper.png" id="paperImg">
@@ -75,13 +93,13 @@
                         </div>
                     </div>
                     <div id="looseResult">
-                        <div id="rockWin">
+                        <div id="rockloose">
                             <img src="rock.png" id="rockloose">
                         </div>
-                        <div id="paperWin">
+                        <div id="paperloose">
                             <img src="paper.png" id="paperloose">
                         </div>
-                        <div id="scissorWin">
+                        <div id="scissorloose">
                             <img src="scissor.png" id="scissorloose">
                         </div>
                     </div>

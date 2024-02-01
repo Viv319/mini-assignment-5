@@ -83,6 +83,10 @@
 }
 
 /*  */
+#rockWin{
+    position: relative;
+    margin-top: -400px;
+}
 
 #rockout, #scissorout {
     /* margin-top: -500px; */
@@ -204,6 +208,63 @@
     /* make is un comment after final changes */
  }
 
+ #tieUP{
+    /* display: flex; */
+    width: 209px;
+    height: 36px;
+    margin-top: -150px;
+    margin-left: 650px;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 45.7px;
+    letter-spacing: 10%;
+    align-items: center;
+    color: #FFFFFF;
+ }
+
+ #youlost{
+    width: 209px;
+    height: 36px;
+    margin-top: -200px;
+    margin-left: 600px;
+    font-size: 39px;
+    font-weight: 800;
+    line-height: 45.7px;
+    letter-spacing: 10%;
+    align-items: center;
+    color: #FFFFFF;
+ }
+
+ #againstPC{
+    position: absolute;
+    width: 168px;
+    height: 31px;
+    margin-top: 900px;
+    margin-left: 300px;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 29.3px;
+    letter-spacing: 10%;
+    color: #FFFFFF;
+ }
+
+ #multiTaskButton{
+    width: 174px;
+    height: 44px;
+    margin-top: 300px;
+    margin-left: -240px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    color: #6B6B6B;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 17.58px;
+    letter-spacing: 10%;
+}
+
+ #scissorloose{
+
+ }
  #youPicked{
     width: 113px;
     margin-top: 124px;
@@ -217,6 +278,7 @@
     line-height: 19.92px;
     letter-spacing: 10%;
     color: #FFFFFF;
+    display: inline-flex;
  }
 
  #pcPicked{
@@ -236,6 +298,7 @@
     letter-spacing: 10%;
     text-align: center;
     color:#FFFFFF;
+    display: inline-flex;
 }
 
  #againstPC{
@@ -256,14 +319,34 @@
     width: 174px;
     height: 44px;
     margin-top: 360px;
-    margin-left: -183px;
+    margin-left: -300px;
     font-weight: 600;
     font-size: 15px;
     line-height: 17.58px;
-    letter-spacing: 10%;
+    letter-spacing: 2px;
     border-radius: 9px;
+    border: 2px #FFFFFF;
     color: #6B6B6B;
     background-color: #FFFFFF;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#next{
+    position: relative;
+    float: right;
+    width: 119px;
+    height: 40px;
+    margin-top: -300px;
+    margin-right: 30px;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 17.26px;
+    letter-spacing: 10%;
+    color: #FFFFFF;
 }
 
 #rule {
